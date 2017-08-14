@@ -25,7 +25,7 @@ The goals / steps of this project are the following:
 [1_pred_dist]: ./output_images/1_pred_dist.png "1_pred_dist"
 [2_pred_dist]: ./output_images/2_pred_dist.png "2_pred_dist"
 [3_pred_dist]: ./output_images/3_pred_dist.png "3_pred_dist"
-[4_pred_dist]: ./output_images/5_pred_dist.png "5_pred_dist"
+[4_pred_dist]: ./output_images/4_pred_dist.png "4_pred_dist"
 
 [Children crossing]: ./output_images/Childrencrossing.jpg "Children crossing"
 [Priority road]: ./output_images/Priorityroad.jpg "Priority road"
