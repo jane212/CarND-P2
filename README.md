@@ -25,14 +25,14 @@ The goals / steps of this project are the following:
 [1_pred_dist]: ./output_images/1_pred_dist.png "1_pred_dist"
 [2_pred_dist]: ./output_images/2_pred_dist.png "2_pred_dist"
 [3_pred_dist]: ./output_images/3_pred_dist.png "3_pred_dist"
-[5_pred_dist]: ./output_images/5_pred_dist.png "5_pred_dist"
+[4_pred_dist]: ./output_images/5_pred_dist.png "5_pred_dist"
 
 [Children crossing]: ./output_images/Childrencrossing.jpg "Children crossing"
 [Priority road]: ./output_images/Priorityroad.jpg "Priority road"
 [Right-of-way at the next intersection]: ./output_images/Right-of-wayatthenextintersection.jpg "Right-of-way at the next intersection"
 [Roundaboutmandatory]: ./output_images/Roundaboutmandatory.jpg "Roundaboutmandatory"
 [Turnrightahead]: ./output_images/Turnrightahead.jpeg "Turnrightahead"
-
+[test_images]: ./output_images/test_images.png "test_images"
 
 ---
 
@@ -162,6 +162,8 @@ My final model results were:
 
 * test set accuracy of 0.933
 
+Note that the final model I choosed is not the model trained at epoch 500. I keep monitoring the validation accuracy and the model trained at epoch 490 with validation accuracy 0.932 was chosen and saved for the later testing.
+
 The training code and result can be found in cell 'training' (In [17]) in Traffic_Sign_Classifier.ipynb
  
 ### Test a Model on New Images
@@ -170,8 +172,7 @@ The training code and result can be found in cell 'training' (In [17]) in Traffi
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][Children crossing] ![alt text][Priority road] ![alt text][Right-of-way at the next intersection] 
-![alt text][Roundaboutmandatory] ![alt text][Turnrightahead]
+![alt text][test_images]
 
 The first image might be difficult to classify because the image contains another small sign at the bottom.
 
@@ -181,23 +182,23 @@ Here are the results of the prediction:
 
 | Image			        				| Prediction	        				| 
 |:-------------------------------------:|:-------------------------------------:| 
-| Children crossing    					| dangerous curve to the right  		| 
+| Children crossing    					| Children crossing  					| 
 | Priority road    						| Priority road							|
 | Right-of-way at the next intersection	| Right-of-way at the next intersection	|
 | Roundaboutmandatory      				| Roundaboutmandatory					|
 | Turnrightahead						| Turnrightahead      					|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. 
+The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. 
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 The code for making predictions on my final model is located in the 23rd cell of the Ipython notebook.
 
-The model is pretty sure about the prediction for all the images exept the first one which it predicts wrong.
+The model is pretty sure about the prediction for all the images exept the first one.
 
 The prediction confidence distribution of the first image is shown below:
-The right class "Children crossing" comes at the second highest likelihood.
+The class "dangerous curve to the right" comes at the second highest likelihood.
 
 ![alt text][0_pred_dist]
 
@@ -209,7 +210,7 @@ The prediction confidence distribution of the other four images is shown below:
 
 ![alt text][3_pred_dist]
 
-![alt text][5_pred_dist]
+![alt text][4_pred_dist]
 
 
 
